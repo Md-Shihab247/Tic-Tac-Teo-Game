@@ -18,7 +18,7 @@ let currentplayer = "x"
             return cells[a];  
         }
        }
-       return cells.includes(null) ? null : "Draw"
+       return cells.includes(null) ? null : "draw"
 
     }
 
@@ -32,7 +32,7 @@ let currentplayer = "x"
         let result =  checking()
 
         if(result) {
-            resultDisplay.textContent = result  == "draw" ? "Draw" : `${result} win..!`
+            resultDisplay.textContent = result  === "draw" ? "Draw" : `${result} win..!`
         }
         else{
             currentplayer = currentplayer == "x" ? "o" : "x"
