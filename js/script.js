@@ -22,7 +22,6 @@ let currentplayer = "x"
 
     }
 
-
     function hangdclick(e){
         
         let cellIndex = e.target.dataset.index
@@ -50,7 +49,6 @@ let currentplayer = "x"
             game.appendChild(call)
         }
         }
-
 
 creatCell();
     
